@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thresa Mulenga - Student Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Thresa Mulenga</h1>
+        <p>Cybersecurity Student | Mulungushi University</p>
+        <button id="theme-toggle">Switch Theme</button>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#learning">Learning Plan</a></li>
+                <li><a href="#projects">Projects & Skills</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#calculator">Study Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Hero Section -->
+        <section id="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a second-year Cybersecurity student passionate about software engineering, web development, and secure application architecture.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Thresa Mulenga, and I am currently a second-year undergraduate student pursuing a degree in Cybersecurity at Mulungushi University. I am deeply passionate about software engineering, ethical hacking, and web technologies. My current academic goal is to master foundational web technologies such as HTML5, CSS3, and modern JavaScript to build secure, user-friendly, and responsive web applications for the future.</p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Exploring web development tools and building responsive layouts</li>
+                <li>Practicing coding challenges and learning JavaScript logic</li>
+                <li>Reading technology blogs and exploring cybersecurity fundamentals</li>
+            </ul>
+        </section>
+
+        <!-- Learning Plan Section -->
+        <section id="learning">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Master HTML5 structural tags and accessible form controls.</li>
+                <li>Build proficiency in modern CSS layout techniques including Flexbox and Grid.</li>
+                <li>Learn JavaScript DOM manipulation, validation logic, and dynamic site interaction.</li>
+            </ol>
+
+            <h3>Learning Schedule Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Target Completion</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 & Accessibility</td>
+                        <td>Week 2</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Layouts & Responsive Design</td>
+                        <td>Week 4</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript & Interactive Features</td>
+                        <td>Week 6</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Projects & Skills Section -->
+        <section id="projects">
+            <h2>Projects & Skills</h2>
+            <p>Here are three core areas I have worked on during my Web Technologies studies:</p>
+            
+            <div class="project-card">
+                <h3>1. HTML5 Semantic Layouts</h3>
+                <p>Structured webpage design using proper semantic markup and accessible elements.</p>
+                <button class="toggle-details-btn">Show Details</button>
+                <div class="project-details" style="display: none;">
+                    <p>Details: Implemented semantic containers including header, nav, section, article, and footer tags to ensure maximum web accessibility.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>2. Responsive Styling with CSS3</h3>
+                <p>Created adaptable user interfaces that adjust smoothly across screen widths.</p>
+                <button class="toggle-details-btn">Show Details</button>
+                <div class="project-details" style="display: none;">
+                    <p>Details: Utilized CSS media queries, scalable viewport units, and flexbox containers to eliminate horizontal page scrolling on mobile screens.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>3. Interactive Form Handling</h3>
+                <p>Built client-side JavaScript features to validate user inputs locally in the browser.</p>
+                <button class="toggle-details-btn">Show Details</button>
+                <div class="project-details" style="display: none;">
+                    <p>Details: Prevented default form submission using event listener methods and provided immediate inline response messages.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="Thresa working on a web development project">
+                    <figcaption>Working on web technology assignments.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="Mulungushi University campus view">
+                    <figcaption>Mulungushi University campus learning environment.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="Cybersecurity study notes and code layout">
+                    <figcaption>Cybersecurity and programming notes.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>My Media</h2>
+            
+            <div class="media-container">
+                <h3>Video Presentation</h3>
+                <video controls width="320">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><em>Summary: A short video introducing my student background and web development goals.</em></p>
+            </div>
+
+            <div class="media-container">
+                <h3>Audio Introduction</h3>
+                <audio controls>
+                    <source src="videos/audio.aac" type="audio/aac">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><em>Summary: An audio statement describing my academic journey at Mulungushi University.</em></p>
+            </div>
+        </section>
+
+        <!-- Study Hours Calculator Section -->
+        <section id="calculator">
+            <h2>Study Hours Calculator</h2>
+            <form id="calc-form">
+                <div>
+                    <label for="hours-per-day">Planned Study Hours Per Day:</label>
+                    <input type="number" id="hours-per-day" min="1" max="24" required>
+                </div>
+                <div>
+                    <label for="days-per-week">Days Per Week (1 to 7):</label>
+                    <input type="number" id="days-per-week" min="1" max="7" required>
+                </div>
+                <button type="submit">Calculate Total Hours</button>
+            </form>
+            <div id="calc-result" class="result-message"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><small><em>Browser demonstration only &mdash; no message is sent.</em></small></p>
+            
+            <form id="contact-form" novalidate>
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="name-error" class="error-msg"></span>
+                </div>
+
+                <div>
+                    <label for="email">Your Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error-msg"></span>
+                </div>
+
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span id="message-error" class="error-msg"></span>
+                </div>
+
+                <button type="submit">Submit Form</button>
+            </form>
+
+            <div id="form-preview" class="preview-box" style="display: none;"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Thresa Mulenga | ICT251 Web Technologies</p>
+        <p><a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" id="github-link">View Source on GitHub</a></p>
+    </footer>
+
+</body>
+</html>

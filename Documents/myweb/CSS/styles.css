@@ -1,0 +1,266 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Strict Image Sizing Controls */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1a2a3a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover, nav a:focus {
+    color: #00bcd4;
+    outline: 2px solid #00bcd4;
+}
+
+/* Theme Switcher Button */
+#theme-toggle {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Main Content Containers */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Hero Button */
+.btn {
+    display: inline-block;
+    background-color: #1a2a3a;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #00bcd4;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Project Cards & Details */
+.project-card {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.toggle-details-btn {
+    background-color: #1a2a3a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef7f9;
+    border-left: 4px solid #00bcd4;
+}
+
+/* Gallery Photo Sizing Fix */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery figure {
+    margin: 0;
+    max-width: 280px;
+    width: 100%;
+}
+
+.gallery figure img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 6px;
+}
+
+/* Media Controls */
+#media video {
+    max-width: 320px !important;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling & Validation Messages */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #1a2a3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #00bcd4;
+}
+
+.error-msg {
+    color: #d9534f;
+    font-size: 0.88em;
+    display: block;
+    margin-top: 4px;
+}
+
+.preview-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f4e8;
+    border: 1px solid #28a745;
+    border-radius: 6px;
+}
+
+/* Dark Theme Overrides */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme section {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.05);
+}
+
+body.dark-theme th {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+body.dark-theme .project-details {
+    background-color: #263238;
+    color: #ffffff;
+}
+
+body.dark-theme .preview-box {
+    background-color: #1b3820;
+    color: #e0e0e0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1a2a3a;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #00bcd4;
+}
+
+/* Responsive Media Query */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery figure {
+        max-width: 100%;
+    }
+}
